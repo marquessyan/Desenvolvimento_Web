@@ -1,0 +1,219 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: lightblue;
+}
+
+.container-body {
+  display: grid;
+  justify-self: center;
+  max-width: 1300px;
+  background-color: lightblue;
+}
+
+.cabecalho-box {
+  background-color: #004d66;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  border-radius: 20px;
+  margin: 10px;
+  padding: 30px;
+}
+
+.cabecalho-box h1 {
+  font-size: 3rem;
+  padding: 7px;
+  border-radius: 20px;
+  width: 100%;
+  text-align-last: center;
+  color: white;
+}
+.cabecalho-box h2 {
+  border-radius: 10px;
+  padding: 10px;
+  color: #004d66;
+  background-color: white;
+}
+
+.cabecalho-box h2 p {
+  color: white;
+  text-align: center;
+}
+
+.cabecalho-box div {
+  color: white;
+  text-align: center;
+}
+
+.descricao-evento {
+  background-color: #004d66;
+  border-radius: 20px;
+  margin: 10px;
+  padding: 30px;
+}
+.descricao-evento div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.descricao-evento p {
+  font-size: 1.2rem;
+  color: white;
+  text-align: center;
+}
+
+.descricao-evento h2 {
+  border-radius: 10px;
+  padding: 10px;
+  color: #004d66;
+  background-color: white;
+  text-align: center;
+}
+
+.palestrantes {
+  margin: 10px;
+}
+
+.palestrantes .header-palestrantes {
+  background-color: #004d66;
+  border-radius: 20px;
+  padding: 30px;
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.header-palestrantes h3 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.body-palestrantes {
+  gap: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media screen and (max-width: 500px) {
+  .body-palestrantes {
+    gap: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+.body-palestrantes div {
+  background-color: #004d66;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.palestrante {
+  padding: 20px;
+  background-color: #004d66;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.palestrante h4 {
+  justify-content: center;
+  padding: 5px;
+  height: auto;
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.palestrante img {
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.palestrante p {
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.form-inscricao {
+  background-color: #004d66;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  margin: 10px;
+  padding: 30px;
+  color: white;
+}
+
+.form-inscricao .content {
+  max-width: 500px;
+}
+
+.form-inscricao h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form-inscricao form {
+  flex-direction: column;
+  display: flex;
+  gap: 15px;
+  width: 100%;
+  max-width: 500px;
+}
+
+.form-inscricao input[type="text"],
+.form-inscricao input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+.form-inscricao .ingresso-options {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-inscricao .ingresso-options > div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.form-inscricao .termos {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.form-inscricao button {
+  background-color: #00a3cc;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.form-inscricao button:hover {
+  background-color: #008fb3;
+}

@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.container-body {
+  display: grid;
+  justify-self: center;
+  max-width: 1300px;
+  background-color: #004d66;
+}
+
+.cabecalho-box {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  padding: 40px;
+}
+
+.cabecalho-box h1 {
+  background-color: white;
+}

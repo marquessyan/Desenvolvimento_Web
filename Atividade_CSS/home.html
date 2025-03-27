@@ -97,6 +97,7 @@
         </div>
       </section>
       <section class="form-inscricao">
+        <h3>Quer Participar? Preencha o formulário abaixo.</h3>
         <form action="">
           <div>
             <label for="Nome">Nome Completo</label>
@@ -105,6 +106,7 @@
               name="Nome"
               placeholder="Digite seu nome"
               required
+              class="inputAlongar"
             />
           </div>
           <div>
@@ -114,14 +116,15 @@
               name="email"
               placeholder="Digite seu email"
               required
+              class="inputAlongar"
             />
           </div>
 
           <div>
+            <input type="radio" name="ingresso" required value="presencial"/>
             <label for="ingresso">Presencial</label>
-            <input type="radio" name="ingresso" required />
+            <input type="radio" name="ingresso" required value="online"/>
             <label for="ingresso">Online</label>
-            <input type="radio" name="ingresso" required />
           </div>
 
           <div>
@@ -129,6 +132,7 @@
             <label for="checkbox"
               ><small>Eu li e aceito os termos</small></label
             >
+            <br /><input type="submit" name="Enviar" id="submit" class="inputAlongar"/>
           </div>
         </form>
       </section>

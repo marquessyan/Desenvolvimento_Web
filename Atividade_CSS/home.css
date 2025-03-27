@@ -160,3 +160,44 @@ footer {
   margin-top: 20px;
   text-align: center;
 }
+
+/* Formulário */
+.form-inscricao {
+  color: white;
+}
+
+form {
+  background-color: var(--branco);
+  padding: 20px;
+  max-width: 400px;
+  margin: auto;
+  border-radius: 8px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+input {
+  /* width: 100%; */
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid var(--azul-petroleo);
+  border-radius: 5px;
+}
+
+.inputAlongar {
+  width: 100%;
+}
+
+#submit {
+  background-color: var(--azul-claro);
+  color: var(--azul-petroleo);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#submit:hover {
+  background-color: var(--azul-petroleo);
+  color: var(--branco);
+}

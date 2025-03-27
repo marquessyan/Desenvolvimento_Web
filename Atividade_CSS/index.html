@@ -9,14 +9,36 @@
 
   <body>
     <!-- SEPARAÇÃO ENTRE PARTES -->
-
-    <section id="palestrantes">
-      <br />
+    <div class="container-body">
+      <header class="cabecalho-box">
+        <h1>TechConnect</h1>
+        <h2>TechFuture Summit 2025 – O Futuro da Tecnologia e Design</h2>
+        <div id="sobre">
+          <h3>O que é o TechFuture Summit?</h3>
+          <p>
+            O maior evento para desenvolvedores e designers discutirem as
+            tendências do futuro da tecnologia e do design.
+          </p>
+        </div>
+      </header>
+      <section class="descricao-evento">
+        <p>
+          A TechConnect tem o prazer de apresentar o TechFuture Summit 2025, um
+          evento imperdível para desenvolvedores e designers apaixonados por
+          inovação! Junte-se a nós para explorar as últimas tendências em
+          tecnologia e design, com palestras inspiradoras de especialistas da
+          indústria, painéis interativos e oportunidades de networking
+          exclusivas.
+          <br />📅 Data: 15 de outubro de 2025 <br />📍 Local: Centro de
+          Convenções TechHub, São Paulo - SP
+        </p>
+      </section>
       <h3>Palestrantes do TechFuture Summit 2025</h3>
       <p>
         Conheça os especialistas que irão compartilhar insights valiosos sobre
         as tendências do futuro da tecnologia e design!
       </p>
+    <section id="palestrantes">
       <div id="amanda" class="palestrante">
         <h4>Amanda Ribeiro – Designer de Experiência do Usuário (UX)</h4>
         <img
@@ -83,6 +105,7 @@
           name="Nome"
           placeholder="Digite seu nome"
           required
+          class="inputAlongar"
         /><br />
         <label for="email">Email</label><br />
         <input
@@ -90,18 +113,19 @@
           name="email"
           placeholder="Digite seu email"
           required
+          class="inputAlongar"
         />
         <br />
         <p>Selecione seu tipo de ingresso</p>
         <br />
-        <label for="ingresso">Presencial</label>
-        <input type="radio" name="ingresso" required />
+        <input type="radio" id= "ingresso" name="ingresso" value="presencial" required />
+        <label for="ingresso">Presencial</label> <br>
+        <input type="radio" id="ingresso" name="ingresso" value="ingresso" required />
         <label for="ingresso">Online</label>
-        <input type="radio" name="ingresso" required />
-        <br />
+        <br/>
         <input type="checkbox" name="checkbox" required />
         <label for="checkbox"><small>Eu li e aceito os termos</small></label>
-        <br /><input type="submit" name="Enviar" />
+        <br /><input type="submit" name="Enviar" id="submit" class="inputAlongar"/>
       </form>
     </section>
     <footer>
